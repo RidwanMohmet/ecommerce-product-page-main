@@ -48,15 +48,17 @@ export default function Home() {
           </div>
         </nav>
         <hr />
-        <div className=" m-20  p-10 md:flex md:space-x-20 justify-center items-center">
-          <div className="flex flex-col justify-center items-center">
-            <Image
-              src="/images/image-product-1-thumbnail.jpg"
-              width={500}
-              height={500}
-              alt="profile"
-              className="rounded-lg"
-            />
+        <div className=" md:m-20   md:flex md:space-x-20 justify-center items-center">
+          <div className="flex flex-col justify-center items-center ">
+            <div className="rounded-lg">
+              <Image
+                src="/images/image-product-1-thumbnail.jpg"
+                width={500}
+                height={500}
+                alt="profile"
+                className="md:rounded"
+              />
+            </div>
             <div className="mt-5 md:flex hidden">
               <span className="px-3">
                 <Image
@@ -97,7 +99,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="leading-10 my-10">
+          <div className="leading-10 my-10 p-10">
             <p className="text-sm text-orange-500 font-bold">SNEAKER COMPANY</p>
             <h1 className="font-bold text-4xl mt-3">
               Fall Limited Edition Sneakers
@@ -114,7 +116,7 @@ export default function Home() {
               <p className="text-gray-300">$250.00</p>
             </div>
 
-            <div className="md:flex  ">
+            <div className="flex flex-col md-flex-row justify-center items-center  ">
               <div className="space-x-28 flex mb-10 justify-center items-center mr-5">
                 <span className="font-bold text-orange-500 text-3xl"> - </span>
                 <span className="font-bold  text-xl">0</span>
