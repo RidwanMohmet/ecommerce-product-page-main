@@ -57,7 +57,7 @@ export default function Home() {
               alt="profile"
               className="rounded-lg"
             />
-            <div className="mt-5 flex">
+            <div className="mt-5 md:flex hidden">
               <span className="px-3">
                 <Image
                   src="/images/image-product-1-thumbnail.jpg"
@@ -107,10 +107,13 @@ export default function Home() {
               Featuring a duraction rubber outer sole. they will withstand
               everything the weather can offer.
             </p>
-            <p className="font-bold text-black">
-              $250.00 <span className="text-orange-500 px-5">50%</span>
-            </p>
-            <p className="text-gray-300">$250.00</p>
+            <div className="flex md:flex-col">
+              <p className="font-bold text-black">
+                $250.00 <span className="text-orange-500 px-5">50%</span>
+              </p>
+              <p className="text-gray-300">$250.00</p>
+            </div>
+
             <div className="md:flex  ">
               <div className="space-x-28 flex mb-10 justify-center items-center mr-5">
                 <span className="font-bold text-orange-500 text-3xl"> - </span>
