@@ -5,8 +5,20 @@ export default function Home() {
   return (
     <div className="bg-blue-100">
       <div className="shadow-2xl bg-white mx-10">
-        <nav className="mx-10  flex  justify-between justfiy-center items-center justfiy-center items-center">
-          <h2 className="font-bold text-4xl">sneakers</h2>
+        <nav className="mx-10  flex  justify-between justfiy-center items-center justfiy-center items-center cursor-pointer ">
+          <div className="flex justify-center items-center">
+            <span className="md:hidden text-3xl pr-10">
+              <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
+                  fill="#69707D"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+            <h2 className="font-bold text-4xl">sneakers</h2>
+          </div>
+
           <ul className="md:flex justfiy-center items-center hidden justfiy-center items-center space-x-10 text-gray-400 text-2xl ">
             <li>Collections</li>
             <li>Men</li>
@@ -14,7 +26,7 @@ export default function Home() {
             <li>About</li>
             <li>Contact</li>
           </ul>
-          <div className="flex justfiy-center items-center justfiy-center items-center space-x-10">
+          <div className="flex  justfiy-center items-center justfiy-center items-center space-x-10">
             <span>
               <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -99,13 +111,13 @@ export default function Home() {
               $250.00 <span className="text-orange-500 px-5">50%</span>
             </p>
             <p className="text-gray-300">$250.00</p>
-            <div className="flex space-x-10">
-              <div className="space-x-10">
+            <div className="md:flex  ">
+              <div className="space-x-28 flex mb-10 justify-center items-center mr-5">
                 <span className="font-bold text-orange-500 text-3xl"> - </span>
                 <span className="font-bold  text-xl">0</span>
                 <span className="font-bold text-orange-500 text-3xl">+</span>
               </div>
-              <button className=" flex justify-center items-center  bg-orange-500 px-10 text-center text-white font-bold rounded-lg">
+              <button className=" flex justify-center items-center  bg-orange-500  text-center text-white font-bold rounded-lg w-64 md:w-48 md:py-1">
                 <span className="pr-5">
                   <svg
                     width="22"
